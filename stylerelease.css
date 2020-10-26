@@ -1,0 +1,156 @@
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Noto+Sans+HK&family=Nunito+Sans:wght@200&display=swap');
+* {
+	margin: 0;
+	padding: 0; 
+}
+
+.homepage {
+	background: url(background.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.navbar {
+	height: 50px;
+	width: 100%;
+	background: rgba(255, 255, 255,0.4);
+}
+
+.logo {
+	width: 40px;
+	height: auto;
+	padding: 20px 100px;
+	margin-top: -17px;
+	margin-left: -50px;
+}
+
+.navbar ul {
+	float: right;
+	margin-right: 20px;
+}
+
+.navbar ul li {
+	list-style: none;
+	margin-top: -15px;
+	display: inline-block;
+	line-height: 80px;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 15px;
+	padding: 6px 13px; 
+	font-family: 'Noto Sans HK', sans-serif;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+	background: red;
+	border-radius: 2px;
+}
+
+.update {
+	position: relative;
+	width: 100%;
+	height: 85%;
+	background: rgba(147, 190, 250,0.5);
+	float: right;
+	box-sizing: border-box;
+}
+
+.update ul {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.update ul li {
+	list-style: none;
+	background: #fff;
+	box-sizing: border-box;
+	height: 125px;
+	margin: 10px 0;
+}
+
+.update ul li .chapUp {
+	position: relative;
+	padding: 20px;
+	background: #00ffe5;
+	box-sizing: border-box;
+	width: 20%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	transition: .5s;
+}
+
+.update ul li:hover .chapUp {
+	background: #05998f;
+}
+
+.update ul li .chapUp h2 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 35px;
+	line-height: 30px;
+}
+
+.update ul li .chapUp h2 span {
+	font-size: 28px;
+}
+
+.update ul li .details {
+	padding: 5px;
+	background: #fff;
+	box-sizing: border-box;
+	width: 200%;
+	height: 100%;
+}
+
+.update ul li .details .mangaUp {
+	position: relative;
+	width: 5%;
+	height: auto;
+	padding: 2px;
+	float: left;
+	margin-right: 5px;	
+}
+
+.update ul li .details .desc h3{
+	position: relative;
+	margin: 0;
+	padding: 0; 	
+	size: 22px;
+}
+
+.update ul li .details .desc h3 span {
+	padding: 0px;
+	font-size: 10px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.update ul li .details .desc a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 10px;
+	border: 2px solid #0f88f2;
+	margin-top: 10px;
+	font-size: 12px;
+	transition: .5s;
+}
+
+.update ul li .details .desc a:hover {
+	background: #0faaf2;
+	color: #fff;
+	border-color: #00145c;
+}
